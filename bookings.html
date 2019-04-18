@@ -1,0 +1,54 @@
+<!--Made By Janesh Patel-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Group Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/datepicker.js"></script>
+</head>
+
+<body id="wrapper">
+    <a href="index.html">
+    <header>
+        <h1>Phoenix Tours and Travels</h1>
+    </header></a>
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li><li>
+        <a href="bookings.html">Bookings</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="todo.html">Things To Do</a></li>
+        
+        </ul>
+    </nav>
+	<form action="thanks.html" method="get"
+    	name="bookings" id="bookings">
+		<fieldset>
+        	<legend>Stay Information</legend>
+        	<label for="arrival_date">Arrival date:</label>
+        	<input type="text" name="arrival_date" id="arrival_date" class="datepicker">
+        	<span>*</span><br>
+        	<label for="nights">Nights:</label>
+        	<input type="text" name="nights" id="nights">
+        	<span>*</span><br>
+		</fieldset>
+		<fieldset>
+    		<legend>Contact Information</legend>
+    		<label for="name">Name:</label>
+			<input type="text" name="name" id="name">
+			<span>*</span><br>
+        	<label for="email">Email:</label>
+        	<input type="text" name="email" id="email">
+        	<span>*</span><br>
+			<label for="phone">Phone:</label>
+			<input type="text" name="phone" id="phone" placeholder="999-999-9999">
+			<span>*</span><br>
+		</fieldset>
+
+		<input type="submit" id="submit" value="Submit Request"><br>
+
+	</form>
+</body>
+</html>
